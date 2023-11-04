@@ -17,4 +17,4 @@ brew install asdf
 add_asdf_plugins
 asdf install
 
-brew install alfred bat colorls docker gnupg htop iterm2 mtr pack pinentry-mac tree watch
+brew install alfred bat colorls docker gnupg htop iterm2 jetbrains-toolbox mtr pack pinentry-mac tree watch
