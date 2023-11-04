@@ -1,0 +1,6 @@
+[user]
+    name = Lallu Anthoor
+    email = lallu.anthoor@sap.com
+    signingkey = 35E61BEE5F102F20
+[init]
+    defaultBranch = main

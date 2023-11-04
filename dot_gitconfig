@@ -1,0 +1,32 @@
+[color]
+    ui = auto
+[pull]
+	rebase = true
+[init]
+    defaultBranch = main
+
+#path specific config
+[includeIf "gitdir:~/SAPDevelop/gh/wdf/"]
+    path = .gitconfig-wdf
+[includeIf "gitdir:~/SAPDevelop/gh/tools/"]
+    path = .gitconfig-tools
+[includeIf "gitdir:~/.local/share/chezmoi/"]
+    path = .gitconfig-tools
+[includeIf "gitdir:~/SAPDevelop/gh/com/"]
+    path = .gitconfig-oss
+[includeIf "gitdir:~/SAPDevelop/gh/oss/"]
+    path = .gitconfig-oss
+[gpg]
+    program = gpg
+[commit]
+    gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Lallu Anthoor
+	email = lallu.anthoor@sap.com
+[core]
+	autocrlf = input

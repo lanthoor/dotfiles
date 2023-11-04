@@ -1,0 +1,55 @@
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+HISTSIZE=9999
+setopt auto_cd
+REPORTTIME=6
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+. ~/.asdf/plugins/java/set-java-home.zsh
+
+# plugins=(git mvn cf github virtualenv kubectl jwt)
+source ~/.antigen/antigen.zsh
+
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle mvn
+antigen bundle kubectl
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen bundle lanthoor/zsh-cf@main
+antigen bundle lanthoor/zsh-github@main
+antigen bundle lanthoor/zsh-virtualenv@main
+
+antigen theme lukerandall
+
+antigen apply
+
+function add_asdf_plugins() {
+  while IFS=' ' read -r plugin_name plugin_repo; do
+    asdf plugin add "$plugin_name" "$plugin_repo"
+  done < "$1"
+}
+
+PROMPT='%{$fg_bold[white]%}'$'\uF179''%{$reset_color%} %{$fg_bold[blue]%}%2~%{$reset_color%} $(my_git_prompt_info)%{$reset_color%}%B»%b '
+RPS1="${return_code}"
+
+alias ll='colorls -lA --sd --dark'
+alias ccat='bat --paging=never --theme="Visual Studio Dark+"'
+alias tree='tree --dirsfirst -C -a'
+alias wgit="cd $HOME/SAPDevelop/gh/wdf"
+alias tgit="cd $HOME/SAPDevelop/gh/tools"
+alias pgit="cd $HOME/SAPDevelop/gh/com"
+alias commit='git commit -S -m'
+alias ci='code-insiders'
+
+export GPG_TTY=$(tty)
+
+export PATH=/opt/homebrew/opt/ruby/bin:$PATH:/opt/homebrew/lib/ruby/gems/3.1.0/bin
+export GEM_HOME=$HOME/.gem
+export PATH=$GEM_HOME/bin:$PATH
+
+export ARTIFACTORY_USER=$(whoami)
+export ARTIFACTORY_REFERENCE_TOKEN=
+export DOCKER_HOST=unix://$HOME/.colima/default/docker.sock
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
