@@ -32,7 +32,8 @@ dockutil --remove "Notes" --no-restart
 dockutil --remove "Apple@SAP"
 
 brew install font-fira-code font-fira-code-nerd-font font-meslo-lg font-meslo-lg-nerd-font
-brew install alfred bat colima docker gnupg htop iterm2 jetbrains-toolbox mtr buildpacks/tap/pack pinentry-mac ruby@3.1 tree watch
+brew install cloudfoundry/tap/cf-cli@8 argocd gh jq yq
+brew install alfred bartender bat colima docker gnupg htop iterm2 jetbrains-toolbox mtr buildpacks/tap/pack pinentry-mac ruby@3.1 tree watch
 gem install colorls
 
 brew cleanup --prune all -s

@@ -11,7 +11,7 @@
 [includeIf "gitdir:~/SAPDevelop/gh/tools/"]
     path = .gitconfig-tools
 [includeIf "gitdir:~/.local/share/chezmoi/"]
-    path = .gitconfig-tools
+    path = .gitconfig-oss
 [includeIf "gitdir:~/SAPDevelop/gh/com/"]
     path = .gitconfig-oss
 [includeIf "gitdir:~/SAPDevelop/gh/oss/"]
