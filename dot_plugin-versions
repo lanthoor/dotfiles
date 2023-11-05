@@ -1,7 +1,6 @@
 argocd                       https://github.com/beardix/asdf-argocd.git
 bat                          https://gitlab.com/wt0f/asdf-bat.git
 cf                           https://github.com/mattysweeps/asdf-cf
-colima                       https://github.com/CrouchingMuppet/asdf-colima.git
 github-cli                   https://github.com/bartlomiejdanek/asdf-github-cli.git
 gradle                       https://github.com/rfrancis/asdf-gradle.git
 helm                         https://github.com/Antiarchitect/asdf-helm.git

@@ -1,6 +1,5 @@
 argocd 2.8.5
 cf 8.7.4
-colima 0.5.6
 github-cli 2.38.0
 gradle 8.4
 helm 3.13.1

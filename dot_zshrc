@@ -7,8 +7,7 @@ REPORTTIME=6
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 . ~/.asdf/plugins/java/set-java-home.zsh
 
-# plugins=(git mvn cf github virtualenv kubectl jwt)
-source ~/.antigen/antigen.zsh
+source /opt/homebrew/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle git
@@ -45,7 +44,7 @@ alias ci='code-insiders'
 
 export GPG_TTY=$(tty)
 
-export PATH=/opt/homebrew/opt/ruby/bin:$PATH:/opt/homebrew/lib/ruby/gems/3.1.0/bin
+export PATH=/opt/homebrew/opt/ruby@3.1/bin:$PATH:/opt/homebrew/lib/ruby/gems/3.1.0/bin
 export GEM_HOME=$HOME/.gem
 export PATH=$GEM_HOME/bin:$PATH
 
