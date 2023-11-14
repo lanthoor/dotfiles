@@ -19,6 +19,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle lanthoor/zsh-cf@main
 antigen bundle lanthoor/zsh-github@main
 antigen bundle lanthoor/zsh-virtualenv@main
+antigen bundle lanthoor/zsh-jwt@main
 
 antigen theme lukerandall
 

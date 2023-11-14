@@ -16,6 +16,8 @@ code-insiders --install-extension eriklynd.json-tools
 code-insiders --install-extension yzhang.markdown-all-in-one
 code-insiders --install-extension darkriszty.markdown-table-prettify
 code-insiders --install-extension DotJoshJohnson.xml
+code-insiders --install-extension fabiospampinato.vscode-diff
+code-insiders --install-extension tamasfe.even-better-toml
 
 brew install asdf
 
